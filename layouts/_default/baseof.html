@@ -16,6 +16,11 @@
     <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
   </head>
   <body class="my-10">
+<input type="checkbox" class="hidden [&:checked~header_nav]:bg-red-100">
+<header>
+<nav>
+<a href="#">Item</a>
+</nav>
     <div class="container px-4 lg:mx-auto">
       {{ block "main" . }}{{ end }}
     </div>
